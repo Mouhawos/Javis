@@ -1,0 +1,176 @@
+/* App.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f5f9;
+  }
+  
+  .dashboard-container {
+    background-color: #ecf2f9;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1 {
+    color: #3498db;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .config-options {
+    margin-bottom: 20px;
+  }
+  
+  .config-options label {
+    display: block;
+    margin-bottom: 10px;
+    color: #3498db;
+  }
+  
+  .config-options input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .config-options input:focus {
+    border-color: #2980b9;
+  }
+  
+  .dashboard-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .dashboard-item {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 24px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .dashboard-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  .api-key-management {
+    margin-top: 20px;
+  }
+  
+  .api-key-management h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .api-key-management button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .api-key-management button:hover {
+    background-color: #45a049; /* Vert plus foncé au survol */
+  }
+  
+  .api-key-management ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .api-key-management li {
+    margin-bottom: 5px;
+  }
+  
+  .api-key-management li button {
+    padding: 3px 6px;
+    background-color: #f44336; /* Rouge */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .api-key-management li button:hover {
+    background-color: #d32f2f; /* Rouge plus foncé au survol */
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background: linear-gradient(135deg, #007bff, #00b3b3);
+    color: white;
+    transition: left 0.3s;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  
+  /* Ajustement de la taille des logos dans le sidebar */
+  .sidebar li img {
+    width: 20px; /* Ajustez la taille des logos selon vos besoins */
+    margin-right: 10px; /* Espacement entre le logo et le texte */
+  }
+  
+  
+  
+  
+  
+  /* Sidebar ouvert (avec la classe 'open') */
+  .sidebar.open {
+    left: 0;
+  }
+  
+  /* Bouton de bascule du sidebar */
+  .sidebar-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  
+  
