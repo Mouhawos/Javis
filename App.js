@@ -21,7 +21,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/Password genrator.js">
+          <Link to="/password genrator">
             <img className="menu-icon" src="lock.png" alt="" />
             Password generator
           </Link>
@@ -33,13 +33,13 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/Cloud.js">
+          <Link to="/cloud">
             <img className="menu-icon" src="cloud-share.png" alt="" />
             Cloud files
           </Link>
         </li>
         <li>
-          <Link to="/APIs.js">
+          <Link to="/apis">
             <img className="menu-icon" src="marketing.png" alt="" />
             APIs
           </Link>
